@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>forms in HTML</title>
+</head>
+
+<body>
+    <h1>forms in html</h1>
+    <fieldset>
+        <legend>personel information</legend>
+        <form action="action.html" method="post">
+            <label>Enter your name</label>
+            <input type="text" name="name" />
+            <br />
+            <label>Enter your Email</label>
+            <input type="email" name="email" />
+            <br />
+            <label>Enter your contact number</label>
+            <input type="text" name="contact" />
+            <br />
+            <label>Enter your gender</label>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+            <br />
+            <label>Enter ypur password</label>
+            <input type="password" namae="password" />
+            <br />
+            <label>Enter your city</label>
+            <input type="checkbox" name="city" value="Karachi" />Karachi
+            <input type="checkbox" name="city" value="Karachi" />Lahore
+            <input type="checkbox" name="city" value="Karachi" />Islamabad
+            <br />
+            <label>your date of birth</label>
+            <input type="date" name="birthday" />
+            </br><br />
+            <button>submit</button>
+            <fieldset>
+                <legend>option list</legend>
+                <select name="subject">
+                    <option value="maths">Maths</option>
+                    <option value="english">English</option>
+                    <option value="coding">Coding</option>
+                </select>
+            </fieldset>
+        </form>
+    </fieldset>
