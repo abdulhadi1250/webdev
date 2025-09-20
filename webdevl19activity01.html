@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <button onclick="printhello()"> click on this button</button>
+    <br />
+    <button onclick="checknumber(5)"> checknumber 5</button>
+    <button onclick="myfunction()"> my function</button>
+    <h1 style="color:green">Codingal</h1>
+    <p id="demo"></p>
+    <script>
+        function add() {
+            c = 10;
+            e = 20;
+            z = c + e;
+            document.write("the sum is " + z)
+        }
+        add(); //calling of function
+        function subtraction() {
+            a = 10;
+            b = 4;
+            c = a - b;
+            document.write("<br/> the sub is " + c)
+        }
+        subtraction() //calling of function
+
+        //parameterized function
+
+        function sum(a, b) {
+            z = a + b;
+            document.write("<br/> the sum is " + z)
+        }
+        sum(3, 4)
+
+        function sub(a, b) {
+            t = a - b;
+            document.write("the sub is " + t)
+        }
+        sub(79, 6)
+
+        function printhello() {
+            document.writeln("hello woorld")
+        }
+        function checknumber(number) {
+            if (number == 5) {
+                document.writeln("the number is 5")
+            }
+            else {
+                document.writeln("the number is not 5 it is " + number);
+            }
+        }
+        function myfunction() {
+            var b = 4
+            document.getElementById("demo").innerHTML = "the number is this" + (b + 7);
+        }
+        var result = function (a, b) { return a * b };
+        document.write("<br/> the result", result(3, 4))
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
