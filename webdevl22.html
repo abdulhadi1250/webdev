@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body>
+    <p id="demo"></p>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <script>
+        var car = "honda";
+        var cars = ["honda", "civic", "two doors", "1.8", "white"];
+        document.write(cars)
+        document.write("<br/>" + cars[0])
+        document.write("<br/>" + cars[4])
+        document.getElementById("demo").innerHTML = cars[3]
+
+        //activity02
+        var fruits = ["apples", "mango", "grapes", "oranges", "cherry"]
+        document.getElementById("first").innerHTML = fruits.join(" * ");
+        document.getElementById("second").innerHTML = "this is second id " + fruits.pop()
+        document.getElementById("third").innerHTML = "the whole arrays value " + fruits
+        document.getElementById("second").innerHTML = "this is second id " + fruits.pop()
+        document.getElementById("third").innerHTML = "the whole arrays value " + fruits
+
+        //activity03
+        function add(a, b) {
+            return a + b
+        }
+        function average(a, b) {
+            return (add(a, b)) / 2
+        }
+        var result = average(23, 45)
+        document.getElementById("forth").innerHTML = "<br/> the average"
+
+        var number = [10, 12, 34, 55, 67, 89]
+        for (i = 0; i < number.length; i++) {
+            document.write("<br/>" + numbers[i])
+        }
+    </script>
+</body>
+</head>
+</html>
