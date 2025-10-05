@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, world</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        var b = 12;
+        var c = 13;
+        var f = 0;    //number
+        var z = "codingal" //string variable
+        var d = true //Boolean
+        var o = null;
+        var e; //undefined variable
+        document.write("<br/> a and b are equal " + (a == b));
+        document.write("<br/> b and c are equal " + (b == c));
+        document.write("<br/> the value of o " + o);
+        document.write("<br/> the value of e " + e);
+
+        function myfunction() {
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 10) {
+                greeting = "Good Morning"
+            }
+            else if (time < 20) {
+                greeting = "Good Day"
+            }
+            else {
+                greeting = "Good Evening"
+            }
+            document.write("<br/> greeting : " + greeting);
+        }
+        myfunction() //calling function
+
+        var text="";
+        sum=0;
+        var i=0;
+        while(i<10){
+            sum += i;
+            text += "<br/> the number is " + i;
+            i++;
+        }
+        document.write("<br/> the numbers are " + text);
+        document.write("<br/> the sum value is " + sum );
+    </script>
+</body>
+
+</html>
