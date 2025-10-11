@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript</title>
+
+<body>
+    <h2>Javascript classes</h2>
+    <p>how to use classes, and learn to create a class(what is a class? class is a blueprint of an object, holding
+        properties/attributes and function/methods</p>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <script>
+        class student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+
+        }
+        student1 = new student("zara ", 2014);
+        document.getElementById("s1").innerHTML = "my name is " + student1.name + "my age is " + student1.age();
+
+
+        student2 = new student("Marilla ", 2012);
+        document.getElementById("s2").innerHTML = "my name is " + student2.name + "my age is " + student2.age();
+
+    </script>
+</body>
+</head>
+
+</html>
